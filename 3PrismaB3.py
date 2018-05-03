@@ -5,7 +5,7 @@ import math
 
 def Piramide():
 
-    n = 3
+    n = 5
     ang = 2 * math.pi / n
 
     glColor3f(0.8, 0.8, 0.8)
@@ -13,24 +13,26 @@ def Piramide():
 
     glVertex3f(0, -1, 0)
     for i in range(0, n):
-        glVertex3f(cos(i * ang), -1, sin(i * ang))
-        glVertex3f(cos((i+1) * ang), -1, sin((i+1) * ang))
+        glVertex3f(math.cos(i * ang), -1, math.sin(i * ang))
+        glVertex3f(math.cos((i+1) * ang), -1, math.sin((i+1) * ang))
     glEnd()
 
+    glColor3f(0.8, 0.8, 0.8)
+    glBegin(GL_TRIANGLE_FAN)
     glVertex3f(0, 1, 0)
     for i in range(0, n):
-        glVertex3f(cos(i * ang), 1, sin(i * ang))
-        glVertex3f(cos((i+1) * ang), 1, sin((i+1) * ang))
+        glVertex3f(math.cos(i * ang), 1, math.sin(i * ang))
+        glVertex3f(math.cos((i+1) * ang), 1, math.sin((i+1) * ang))
     glEnd()
 
     for i in range(0, n):
         glColor3f(0.8, 0.8, 0.8)
         glBegin(GL_QUADS)
 
-        glVertex3f(cos(i * ang), 1, sin(i * ang))
-        glVertex3f(cos((i+1) * ang), 1, sin((i+1) * ang))
-        glVertex3f(cos((i+1) * ang), -1, sin((i+1) * ang))
-        glVertex3f(cos(i * ang), -1, sin(i * ang))
+        glVertex3f(math.cos(i * ang), 1, math.sin(i * ang))
+        glVertex3f(math.cos((i+1) * ang), 1, math.sin((i+1) * ang))
+        glVertex3f(math.cos((i+1) * ang), -1, math.sin((i+1) * ang))
+        glVertex3f(math.cos(i * ang), -1, math.sin(i * ang))
         
         glEnd()
 

@@ -7,15 +7,16 @@ def Piramide():
 
     ang = math.pi / 180
     d = 0.01
+    s = 5
 
-    for i in range(0, 100):
-        for j in range(0, 360):
-            glColor3f(0.8, 0.8, 0.8)
+    for j in range(0, 360, s):
+        for i in range(-90, 90, s):
             glBegin(GL_QUADS)
-            glVertex3f(math.cos(j * ang), i*d, math.sin(j * ang))
-            glVertex3f(math.cos((j+1) * ang), i*d, math.sin((j+1) * ang))
-            glVertex3f(math.cos(j * ang), (i+1)*d, math.sin(j * ang))
-            glVertex3f(math.cos((j+1) * ang), (i+1)*d, math.sin((j+1) * ang))
+            glColor3f(j/360.0, (i+90)/180.0, 0.8)
+            glVertex3f(math.cos(i * ang) * math.sin(j * ang), math.sin(i * ang), math.cos(i * ang) * math.cos(j * ang))
+            glVertex3f(math.cos((i+s) * ang) * math.sin(j * ang), math.sin((i+s) * ang), math.cos((i+s) * ang) * math.cos(j * ang))
+	    glVertex3f(math.cos((i+s) * ang) * math.sin((j+s) * ang), math.sin((i+s) * ang), math.cos((i+s) * ang) * math.cos((j+s) * ang))
+	    glVertex3f(math.cos(i * ang) * math.sin((j+s) * ang), math.sin(i * ang), math.cos(i * ang) * math.cos((j+s) * ang))
             glEnd()
 
 def abacaxi():

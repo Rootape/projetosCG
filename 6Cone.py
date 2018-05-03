@@ -15,7 +15,7 @@ def Piramide():
     glEnd()
 
     for i in range(0, 360):
-        glBegin(GL_TRIANGLE)
+        glBegin(GL_TRIANGLES)
         glVertex3f(0, 1, 0)
         glVertex3f(math.cos(i * ang), -1, math.sin(i * ang))
         glVertex3f(math.cos((i+1) * ang), -1, math.sin((i+1) * ang))

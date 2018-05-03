@@ -5,7 +5,7 @@ import math
 
 def Piramide():
 
-    n = 3
+    n = 10
     ang = 2 * math.pi / n
 
     glColor3f(0.8, 0.8, 0.8)
@@ -19,7 +19,7 @@ def Piramide():
 
     for i in range(0, n):
         glColor3f(0.8, 0.8, 0.8)
-        glBegin(GL_TRIANGLE)
+        glBegin(GL_TRIANGLES)
 
         glVertex3f(0, 1, 0)
         glVertex3f(math.cos(i * ang), -1, math.sin(i * ang))

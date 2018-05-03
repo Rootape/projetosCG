@@ -6,7 +6,7 @@ import math
 def Piramide():
 
     glColor(0.8, 0.8, 0.8)
-    glBegin(GL_TRIANGLE)
+    glBegin(GL_TRIANGLES)
 
     glVertex3f(0.0, 1.0, 0.0)
     glVertex3f(1.0, 0.0, 1.0)
@@ -15,7 +15,7 @@ def Piramide():
     glEnd()
 
     glColor(0.8, 0.8, 0.8)
-    glBegin(GL_TRIANGLE)
+    glBegin(GL_TRIANGLES)
 
     glVertex3f(0.0, 1.0, 0.0)
     glVertex3f(1.0, 0.0, 1.0)
@@ -24,7 +24,7 @@ def Piramide():
     glEnd()
 
     glColor(0.8, 0.8, 0.8)
-    glBegin(GL_TRIANGLE)
+    glBegin(GL_TRIANGLES)
 
     glVertex3f(0.0, 1.0, 0.0)
     glVertex3f(-1.0, 0.0, 1.0)
@@ -33,7 +33,7 @@ def Piramide():
     glEnd()
 
     glColor(0.8, 0.8, 0.8)
-    glBegin(GL_TRIANGLE)
+    glBegin(GL_TRIANGLES)
 
     glVertex3f(0.0, 1.0, 0.0)
     glVertex3f(1.0, 0.0, -1.0)
@@ -44,7 +44,7 @@ def Piramide():
     #bottom
 
     glColor(0.8, 0.8, 0.8)
-    glBegin(GL_TRIANGLE)
+    glBegin(GL_TRIANGLES)
 
     glVertex3f(0.0, -1.0, 0.0)
     glVertex3f(1.0, 0.0, 1.0)
@@ -53,7 +53,7 @@ def Piramide():
     glEnd()
 
     glColor(0.8, 0.8, 0.8)
-    glBegin(GL_TRIANGLE)
+    glBegin(GL_TRIANGLES)
 
     glVertex3f(0.0, -1.0, 0.0)
     glVertex3f(1.0, 0.0, 1.0)
@@ -62,7 +62,7 @@ def Piramide():
     glEnd()
 
     glColor(0.8, 0.8, 0.8)
-    glBegin(GL_TRIANGLE)
+    glBegin(GL_TRIANGLES)
 
     glVertex3f(0.0, -1.0, 0.0)
     glVertex3f(-1.0, 0.0, 1.0)
@@ -71,7 +71,7 @@ def Piramide():
     glEnd()
 
     glColor(0.8, 0.8, 0.8)
-    glBegin(GL_TRIANGLE)
+    glBegin(GL_TRIANGLES)
 
     glVertex3f(0.0, -1.0, 0.0)
     glVertex3f(1.0, 0.0, -1.0)
